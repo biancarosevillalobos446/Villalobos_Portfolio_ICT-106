@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Bianca Rose Villalobos</title>
+  <!-- Internal CSS -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Varela Round", sans-serif;
+      line-height: 1.5;
+      letter-spacing: 0.5px;
+      overflow-x: hidden;
+      background: linear-gradient(180deg, #ffffff 0%, #e4ecf0 100%);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header-->
+  <header id="home">
+    <nav class="main-nav">
+      <a href="#page1">Home</a>
+      <a href="#page2">About and Hobbies</a>
+      <a href="#page3">Education and Skills</a>
+      <a href="#page4">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main-->
+  <main>
+    <div class="wrapper">
+      <!-- Home  -->
+      <section id="page1" class="home">
+        <h1>Hello, I'm Bianca!</h1>
+        <p>I am an education student who enjoys learning web development and digital art</p>
+        <p>This portfolio is created for my final project in ICT Web Creation</p>
+      </section>
+
+      <!-- About and Hobbies -->
+      <section id="page2" class="about-hobbies">
+        <div id="about-container" class="card">
+          <img src="images/me.png" class="pfp" alt="Profile Picture">
+          <img src="images/bg.gif " class="bg-about"="Background Picture">
+          <h2>About</h2>
+          <p>Hello! I am Bianca Rose Villalobos from Zamboanga City, Philippines, specifically in Zone 6 Talisayan. I am
+            currently studying Bachelor of Technology and Livelihood Education in ICT. My goal is simple: I want to
+            improve my web development skills so that I can create my own websites or portfolios for my own artworks and
+            commission information.</p>
+        </div>
+        <div id="hobbies-container" class="card">
+          <h2>My Hobbies</h2>
+          <!--for getElementById hobbyList-->
+          <ul id="hobbyList"></ul>
+        </div>
+      </section>
+      <section id="page3" class="skills-education">
+        <div id="skills-container" class="card">
+          <h2>Skills</h2>
+          <ul id="skills-list">
+            <li>Digital Art</li>
+            <li>Traditional Art</li>
+            <li>Basic Animation</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Basic JavaScript</li>
+          </ul>
+        </div>
+        <div id="education-container" class="card">
+          <h2 id="education">Education</h2>
+          <p>Colegio De La Ciudad De Zamboanga</p>
+          <P>BTLED&mdash;Information and Communication Technology</P>
+          <p>2nd Year(2025-2026)</p>
+          <div class="container">
+            <i>"At some point I stopped worrying so much about success. I realized that constantly chasing
+              it only made everything feel heavier than it needed to be. Now I just focus on doing the
+              things I genuinely enjoy and improving at my own pace. Strangely enough, when I stopped
+              caring so much about the outcome, success seemed to find its way to me anyway."
+              &mdash; Bianca Rose Villalobos</i>
+            <img src="images/me2.jpg" class="me2" alt="me2">
+          </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="page4" class="contact">
+        <div id="contact-container" class="card">
+          <h2>Contact</h2>
+          <p>Want to send me a feedback or contact me?</p>
+          <p class="email">Gmail: biancarosevillalobos1314@gmail.com</p>
+          <p class="highlight">Phone number: 0975 298 0041 </p>
+          <div class="contact">
+            <label for="nameInput">Your Name:</label>
+            <input type="text" id="nameInput" placeholder="Type your name here">
+            <label for="msgInput">Send Me a Feedback:</label>
+            <textarea id="msgInput" rows="3" placeholder="Type your feedback here"></textarea>
+            <button id="sendBtn">Send</button>
+            <p id="greeting"></p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer-->
+  <footer>
+    Created by Bianca Rose Villalobos &mdash; ICT 106 Final Portfolio &mdash; 2026
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
